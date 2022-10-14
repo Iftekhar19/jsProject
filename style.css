@@ -1,0 +1,178 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    background-color: rgb(10, 108, 113);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100vh;
+}
+/* for scrolbar */
+.table-two::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.table-two
+{
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+/*  */
+.alert
+{
+    
+    text-align: center;
+     visibility:hidden;
+     height: 10px;
+     font-size: 18px;
+}
+.table-container form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px 10px;
+   
+}
+form div
+{
+   display: flex;
+   align-items: center;
+  
+
+}
+/* form div label
+{
+    flex: 1;
+    text-align: center;
+    color: rgb(19, 23, 27);
+    flex-shrink: 1;
+} */
+form div input
+{
+  flex: 1;
+  padding: 6px;
+  border: none;
+  outline: none;
+  /* background-color: rgba(215, 215, 222, 0.632); */
+  font-size: 16px;
+  border-radius: 10px;
+  flex-shrink: 1;
+}
+form #btn
+{
+    align-self: center;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+    /* background-image: linear-gradient( to left, rgb(105, 101, 3), rgb(230, 248, 115)); */
+    background-color: aquamarine;
+    color: rgb(2, 59, 15);
+    /* margin-top: 10px; */
+    cursor: pointer;
+}
+.table-container
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(29, 85, 100);
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+    /* padding: 10px; */
+}
+.table-container h1{
+    text-align: center;
+    background: forestgreen;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 0px;
+}
+.table-container .table-two
+{
+    overflow-x: auto;
+    color: aliceblue;
+    overflow-y: auto;
+    /* position: relative; */
+}
+.table-container .table-two table 
+{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    border-top: none;
+    width: 100%;
+    /* overflow-x: auto; */
+    /* position: relative; */
+    
+    
+    
+}
+/* .table-container table:nth-child(2)
+{
+    background-color: gray;
+    
+} */
+.table-container .table-two table thead
+{
+    background-image: linear-gradient(rgb(2, 93, 32), rgb(39, 148, 121));
+    color:white;
+    font-weight: bold;
+    position: sticky;
+    /* width: 100%; */
+    top: 0px;
+    z-index: 1;
+    
+    
+}
+.table-container .table-two table>tr:hover
+{
+    background-color: rgb(3, 54, 93);
+    /* margin-bottom: 10px; */
+}
+
+td,th{
+    max-width: 100px;
+    padding: 10px 2px;
+    text-align: center;
+    border-bottom: 1px solid rgba(55, 54, 54, 0.681);
+    border-left: 1px solid  rgba(55, 54, 54, 0.681);
+    border-collapse: collapse;
+    /* word-wrap:unset; */
+    overflow-x: auto;
+    
+}
+table tr td .actBtn
+{
+    padding: 2px 5px;
+    /* font-weight: bold; */
+    font-size: 20px;
+    color: rgba(249, 8, 8, 0.897);
+
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* background-color: transparent; */
+} 
+/* @media (orientation: landscape)
+{
+
+    .container
+    {
+        min-height: 100vh;
+    }
+    .container .table-container
+    {
+        min-height: 100vh;
+        background-color: yellow;
+    }
+} */
